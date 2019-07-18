@@ -1,0 +1,46 @@
+body{
+    background-image: url(../images/backgroundIMG.jpg);
+    background-repeat: no-repeat;
+    background-size: 2000px 2000px;
+  
+}
+
+.jumbotron{
+    opacity: .7;
+}
+
+p{
+    font-weight: bold;
+}
+
+#game{
+    padding:15px;
+    margin: 30px;
+    background-color:#e9ecef;
+    border-radius:.3rem;
+    opacity: .7;
+    
+  
+
+}
+
+#icon1,
+#icon3,
+#icon4{
+    width: 170px;
+    height: 200px;;
+}
+
+#icon2{
+    width: 180px;
+    height: 200px;
+}
+
+#wins,
+#losses{
+    padding:15px;
+    margin: 10px;
+    background-color:#e9ecef;
+    border-radius:.3rem;
+    opacity: .7;
+}

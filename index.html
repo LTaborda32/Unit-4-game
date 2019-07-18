@@ -4,9 +4,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Jewel Game</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.js" integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI=" crossorigin="anonymous"></script>
+    <script src="./assets/javascript/game.js"></script>
+   
+  
+    <title>Crystal Collector</title>
 </head>
 <body>
+    <div class="constainer-fluid">
+        <div class="jumbotron">
+            <h1 class="text-center">Crystal Collector</h1><br>
+
+            <h2 class="text-center">How to Play</h2>
+
+			<p class="text-center">
+				You will be given a random number at the start of the game. Use the crystals to match your points to the random number. The value of the crystals changes for every game and you must figure out their values on your own.
+			</p>
+			<p class="text-center">
+				Match your points to the random number to win. If you go over, you lose!
+			</p>
+
+            <p class="text-center">Good Luck!</p>
+    </div>
+
+    <div class="row" id="game">
+        <div class="col-md-3" id="guessSection">
+            <h3 class="text-center" id="randNumber">Number:</h3>
+            <h1 class="numberBox text-center" id="Number">100</h1>
+        </div>
+
+    <div class="col-md-6 text-center" id="buttonSection">
+
+            
+            <button id="button-1" value="0"><img src="./assets/images/Gem1.jpg" class="img-responsive icons" id="icon1"></button>
+
+            
+            <button id="button-2" value="0"><img src="./assets/images/Gem2.jpg" class="img-responsive icons" id="icon2"></button>
+
+           
+            <button id="button-3" value="0"><img src="./assets/images/Gem 3.jpg" class="img-responsive icons" id="icon3"></button>
+
+          
+            <button id="button-4" value="0"><img src="./assets/images/Gem4.jpg" class="img-responsive icons" id="icon4"></button>
+
+        </div>
+
+        <div class="col-md-3" id="totalPoints">
+				<h3 class="text-center" id="score">Your Total Score:</h3>
+				<h1 class="numberBox text-center" id="totalNumber">0</h1>
+        </div>
+        
+       
+
+
+    </div>
+
+    <div class="row" id="scoreSection">
+
+            
+            <div class="col-md-4"></div>
+
+           
+            <div class="col-md-2" id="winSection">
+                <h3 class="text-center" id="wins">Wins:	0</h3>
+            </div>
+
+          
+            <div class="col-md-2" id="lossSection">
+                <h3 class="text-center" id="losses">Losses: 0</h3>
+            </div>
+
+         
+            <div class="col-md-4"></div>
+
+
+
+
     
 </body>
 </html>
