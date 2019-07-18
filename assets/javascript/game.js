@@ -51,7 +51,7 @@ function pickRandomCrystals(arr) {
 
 function crystalValues(arr) {
 
-    // change value of each crystal button according to array
+    
     for (i = 0; i < arr.length; i++) {
 
     $("#button-" + (i+1)).attr("value", arr[i]);
@@ -65,7 +65,7 @@ function crystalValues(arr) {
 
 function gameReset(x) {
 
-    crystalNumbers = []; // clears crystal number values
+    crystalNumbers = []; 
 
     pickRandomNumber(random);
 
@@ -81,11 +81,11 @@ function gameReset(x) {
 
 
 
-pickRandomNumber(random); // random number to match
-pickRandomCrystals(crystal); // array of random crystal values
+pickRandomNumber(random); 
+pickRandomCrystals(crystal); 
 crystalValues(crystalNumbers);
 
-    // crystal button functions
+    
 
     $("#button-1").on("click", function() {
 
@@ -112,7 +112,7 @@ crystalValues(crystalNumbers);
     });
 
 $("button").on("click", function() {
-    // this is what happens if the user wins
+    
     if (totalScore == randNumber) {
 
         wins++;
